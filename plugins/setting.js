@@ -25,7 +25,7 @@ try{
 // ================== BUTTON ON /OFF =====================
 cmd({
     pattern: "button",
-    fromMe: true,
+    category: "owner",
     filename: __filename
 },
 async(conn, mek, m,{ q, isOwner, reply }) => {
@@ -52,7 +52,7 @@ try{
 // ================= WORK TYPE =================
 cmd({
     pattern: "mode",
-    fromMe: true,
+    category: "owner",
     filename: __filename
 },
 async(conn, mek, m,{ q, isOwner, reply }) => {
@@ -72,7 +72,7 @@ try{
 // ================= SET PREFIX =================
 cmd({
     pattern: "setprefix",
-    fromMe: true,
+    category: "owner",
     filename: __filename
 },
 async(conn, mek, m,{ q, isOwner, reply }) => {
