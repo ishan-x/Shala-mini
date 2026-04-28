@@ -1,6 +1,6 @@
 
-const { cmd } = require('../command');
-const config = require('../settings');
+const config = require('../settings')
+const { cmd } = require('../lib/command')
 const axios = require('axios');
 //--------------- Get Sexy joke ----------------//
 cmd({
