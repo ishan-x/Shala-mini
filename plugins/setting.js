@@ -12,7 +12,7 @@ cmd({
 },
 async(conn, mek, m,{ isOwner, reply }) => {
 try{
-    if (!isOwner) return reply("*Owner only command ❌*")
+    
     await updfb()
     await updb()
     return reply("*Database reseted & reloaded ✅*")
@@ -30,7 +30,7 @@ cmd({
 },
 async(conn, mek, m,{ q, isOwner, reply }) => {
 try{
-    if (!isOwner) return reply("*Owner only ❌*")
+
     if (!q) return reply("*true / false ?*")
 
     let inputVal = q.toLowerCase()
@@ -57,7 +57,7 @@ cmd({
 },
 async(conn, mek, m,{ q, isOwner, reply }) => {
 try{
-    if (!isOwner) return reply("*Owner only ❌*")
+
     if (!q) return reply("*public / private / group ?*")
 
     await input("WORK_TYPE", q)
@@ -77,7 +77,7 @@ cmd({
 },
 async(conn, mek, m,{ q, isOwner, reply }) => {
 try{
-    if (!isOwner) return
+    
     await input("PREFIX", q)
     await updb()
     reply(`*New Prefix:* ${q} ✅`)
