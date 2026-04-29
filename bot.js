@@ -31,7 +31,7 @@ const {
 } = require('baileyz');
 
 const {
-  default: makeWASocket,
+ // default: makeWASocket,
   useMultiFileAuthState,
   delay,
   getContentType,
