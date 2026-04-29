@@ -30,18 +30,6 @@ const {
   DisconnectReason
 } = require('baileyz');
 
-const {
- // default: makeWASocket,
-  useMultiFileAuthState,
-  delay,
-  getContentType,
-  makeCacheableSignalKeyStore,
-  Browsers,
-  jidNormalizedUser,
-  downloadContentFromMessage,
-  DisconnectReason
-} = require('@whiskeysockets/baileys');
-
 const initNumberSystem = require('./lib/numberSystem'); 
 const numberSystems = new Map();  
 
